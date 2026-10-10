@@ -1,0 +1,656 @@
+[
+  {
+    "id": 1,
+    "question": "How do list comprehensions work in Python and how can I write nested comprehensions?",
+    "category": "Python Data Structures",
+    "library": "Python",
+    "target_urls": [
+      "https://docs.python.org/3/tutorial/datastructures.html"
+    ],
+    "target_topics": [
+      "List comprehensions",
+      "Nested list comprehensions"
+    ],
+    "relevance_criteria": "Must retrieve documentation explaining list comprehension syntax, looping, and expressions.",
+    "is_answerable": true
+  },
+  {
+    "id": 2,
+    "question": "How do classes, inheritance, and method overriding work in Python?",
+    "category": "Python OOP",
+    "library": "Python",
+    "target_urls": [
+      "https://docs.python.org/3/tutorial/classes.html"
+    ],
+    "target_topics": [
+      "Classes",
+      "Inheritance",
+      "Method overriding"
+    ],
+    "relevance_criteria": "Must retrieve Python OOP documentation covering class definitions, inheritance syntax, and method resolution.",
+    "is_answerable": true
+  },
+  {
+    "id": 3,
+    "question": "How do *args, **kwargs, and lambda expressions work in Python functions?",
+    "category": "Python Control Flow",
+    "library": "Python",
+    "target_urls": [
+      "https://docs.python.org/3/tutorial/controlflow.html"
+    ],
+    "target_topics": [
+      "Function arguments",
+      "Arbitrary argument lists",
+      "Lambda expressions"
+    ],
+    "relevance_criteria": "Must retrieve Python function documentation explaining unpacking arguments and anonymous functions.",
+    "is_answerable": true
+  },
+  {
+    "id": 4,
+    "question": "How do I remove elements from a Python list using the del statement versus pop and remove?",
+    "category": "Python Data Structures",
+    "library": "Python",
+    "target_urls": [
+      "https://docs.python.org/3/tutorial/datastructures.html"
+    ],
+    "target_topics": [
+      "The del statement",
+      "List methods"
+    ],
+    "relevance_criteria": "Must retrieve documentation explaining list modification methods and del slicing.",
+    "is_answerable": true
+  },
+  {
+    "id": 5,
+    "question": "How does array broadcasting work in NumPy when operating on arrays with different shapes?",
+    "category": "NumPy Array Computing",
+    "library": "NumPy",
+    "target_urls": [
+      "https://numpy.org/doc/stable/user/quickstart.html"
+    ],
+    "target_topics": [
+      "Broadcasting rules",
+      "Array arithmetic"
+    ],
+    "relevance_criteria": "Must retrieve NumPy quickstart documentation describing broadcasting dimensions and trailing axes.",
+    "is_answerable": true
+  },
+  {
+    "id": 6,
+    "question": "How do multidimensional indexing and slicing work on a NumPy ndarray?",
+    "category": "NumPy Indexing",
+    "library": "NumPy",
+    "target_urls": [
+      "https://numpy.org/doc/stable/user/basics.indexing.html"
+    ],
+    "target_topics": [
+      "Indexing",
+      "Slicing and striding"
+    ],
+    "relevance_criteria": "Must retrieve NumPy indexing guide explaining multi-axis slices and index tuples.",
+    "is_answerable": true
+  },
+  {
+    "id": 7,
+    "question": "How do I use boolean arrays for masking and conditional indexing in NumPy?",
+    "category": "NumPy Indexing",
+    "library": "NumPy",
+    "target_urls": [
+      "https://numpy.org/doc/stable/user/basics.indexing.html"
+    ],
+    "target_topics": [
+      "Boolean array indexing",
+      "Masking"
+    ],
+    "relevance_criteria": "Must retrieve documentation showing boolean index arrays selecting elements meeting specific conditions.",
+    "is_answerable": true
+  },
+  {
+    "id": 8,
+    "question": "How do reshape, transpose, and ravel change the shape of an array in NumPy?",
+    "category": "NumPy Array Computing",
+    "library": "NumPy",
+    "target_urls": [
+      "https://numpy.org/doc/stable/user/quickstart.html"
+    ],
+    "target_topics": [
+      "Shape manipulation",
+      "Reshape",
+      "Transpose"
+    ],
+    "relevance_criteria": "Must retrieve documentation explaining ndarray shape changes without modifying underlying data.",
+    "is_answerable": true
+  },
+  {
+    "id": 9,
+    "question": "What is the difference between elementwise multiplication and matrix multiplication in NumPy?",
+    "category": "NumPy Array Computing",
+    "library": "NumPy",
+    "target_urls": [
+      "https://numpy.org/doc/stable/user/quickstart.html"
+    ],
+    "target_topics": [
+      "Basic operations",
+      "Matrix product"
+    ],
+    "relevance_criteria": "Must retrieve NumPy operations contrasting the * operator with @ / dot().",
+    "is_answerable": true
+  },
+  {
+    "id": 10,
+    "question": "What is the fundamental difference between a Series and a DataFrame in Pandas?",
+    "category": "Pandas Fundamentals",
+    "library": "Pandas",
+    "target_urls": [
+      "https://pandas.pydata.org/docs/user_guide/dsintro.html",
+      "https://pandas.pydata.org/docs/user_guide/10min.html"
+    ],
+    "target_topics": [
+      "Series structure",
+      "DataFrame structure"
+    ],
+    "relevance_criteria": "Must retrieve documentation defining 1D labeled Series vs 2D tabular DataFrame.",
+    "is_answerable": true
+  },
+  {
+    "id": 11,
+    "question": "How do I select rows and columns using loc and iloc in a Pandas DataFrame?",
+    "category": "Pandas Indexing",
+    "library": "Pandas",
+    "target_urls": [
+      "https://pandas.pydata.org/docs/user_guide/10min.html"
+    ],
+    "target_topics": [
+      "Selection by label",
+      "Selection by position"
+    ],
+    "relevance_criteria": "Must retrieve Pandas documentation demonstrating label-based loc and integer-based iloc indexers.",
+    "is_answerable": true
+  },
+  {
+    "id": 12,
+    "question": "How do I detect, drop, and fill missing data (NaN) in Pandas?",
+    "category": "Pandas Data Cleaning",
+    "library": "Pandas",
+    "target_urls": [
+      "https://pandas.pydata.org/docs/user_guide/10min.html",
+      "https://pandas.pydata.org/docs/user_guide/dsintro.html"
+    ],
+    "target_topics": [
+      "Missing data",
+      "dropna",
+      "fillna"
+    ],
+    "relevance_criteria": "Must retrieve documentation on isna(), dropna(), and fillna() operations.",
+    "is_answerable": true
+  },
+  {
+    "id": 13,
+    "question": "How does the groupby operation work in Pandas to split, apply, and combine data?",
+    "category": "Pandas Aggregation",
+    "library": "Pandas",
+    "target_urls": [
+      "https://pandas.pydata.org/docs/user_guide/10min.html"
+    ],
+    "target_topics": [
+      "Grouping",
+      "Split-apply-combine"
+    ],
+    "relevance_criteria": "Must retrieve Pandas documentation explaining df.groupby() with aggregation functions.",
+    "is_answerable": true
+  },
+  {
+    "id": 14,
+    "question": "How do I merge and concatenate two Pandas DataFrames together?",
+    "category": "Pandas Merging",
+    "library": "Pandas",
+    "target_urls": [
+      "https://pandas.pydata.org/docs/user_guide/10min.html"
+    ],
+    "target_topics": [
+      "Merge",
+      "Concat",
+      "Join"
+    ],
+    "relevance_criteria": "Must retrieve Pandas documentation showing pd.concat() and pd.merge() syntax.",
+    "is_answerable": true
+  },
+  {
+    "id": 15,
+    "question": "What is the difference between a Figure and an Axes in Matplotlib?",
+    "category": "Matplotlib Architecture",
+    "library": "Matplotlib",
+    "target_urls": [
+      "https://matplotlib.org/stable/users/explain/quick_start.html"
+    ],
+    "target_topics": [
+      "Figure parts",
+      "Figure and Axes"
+    ],
+    "relevance_criteria": "Must retrieve documentation detailing the canvas/Figure container vs plotting area Axes.",
+    "is_answerable": true
+  },
+  {
+    "id": 16,
+    "question": "How do I create a grid of subplots using plt.subplots() in Matplotlib?",
+    "category": "Matplotlib Plotting",
+    "library": "Matplotlib",
+    "target_urls": [
+      "https://matplotlib.org/stable/users/explain/quick_start.html",
+      "https://matplotlib.org/stable/tutorials/pyplot.html"
+    ],
+    "target_topics": [
+      "Subplots",
+      "Creating multiple Axes"
+    ],
+    "relevance_criteria": "Must retrieve documentation demonstrating fig, axs = plt.subplots(nrows, ncols).",
+    "is_answerable": true
+  },
+  {
+    "id": 17,
+    "question": "How do I customize plot labels, titles, legends, and line styles in Matplotlib?",
+    "category": "Matplotlib Styling",
+    "library": "Matplotlib",
+    "target_urls": [
+      "https://matplotlib.org/stable/tutorials/pyplot.html",
+      "https://matplotlib.org/stable/users/explain/quick_start.html"
+    ],
+    "target_topics": [
+      "Pyplot formatting",
+      "Labels and legends"
+    ],
+    "relevance_criteria": "Must retrieve documentation showing set_xlabel, set_ylabel, legend, and format strings.",
+    "is_answerable": true
+  },
+  {
+    "id": 18,
+    "question": "What are the key differences between the Pyplot state-based interface and the Object-Oriented interface?",
+    "category": "Matplotlib Architecture",
+    "library": "Matplotlib",
+    "target_urls": [
+      "https://matplotlib.org/stable/users/explain/quick_start.html"
+    ],
+    "target_topics": [
+      "Coding styles",
+      "OO vs pyplot interface"
+    ],
+    "relevance_criteria": "Must retrieve documentation explicitly contrasting the explicit OO style with pyplot state machine.",
+    "is_answerable": true
+  },
+  {
+    "id": 19,
+    "question": "How do Ridge and Lasso regression perform L2 and L1 regularization to prevent overfitting?",
+    "category": "Supervised Learning",
+    "library": "Scikit-learn",
+    "target_urls": [
+      "https://scikit-learn.org/stable/modules/linear_model.html"
+    ],
+    "target_topics": [
+      "Ridge regression",
+      "Lasso",
+      "L1 and L2 penalties"
+    ],
+    "relevance_criteria": "Must retrieve Scikit-learn linear model documentation covering Ridge penalty and Lasso sparsity.",
+    "is_answerable": true
+  },
+  {
+    "id": 20,
+    "question": "How does Logistic Regression perform binary and multiclass classification in Scikit-learn?",
+    "category": "Supervised Learning",
+    "library": "Scikit-learn",
+    "target_urls": [
+      "https://scikit-learn.org/stable/modules/linear_model.html"
+    ],
+    "target_topics": [
+      "Logistic regression",
+      "Multiclass classification"
+    ],
+    "relevance_criteria": "Must retrieve documentation explaining LogisticRegression, solvers, and multi_class strategies.",
+    "is_answerable": true
+  },
+  {
+    "id": 21,
+    "question": "Why is K-Fold cross-validation preferred over a single train-test split for evaluating models?",
+    "category": "Model Validation",
+    "library": "Scikit-learn",
+    "target_urls": [
+      "https://scikit-learn.org/stable/modules/cross_validation.html"
+    ],
+    "target_topics": [
+      "Cross-validation: evaluating estimator performance",
+      "K-fold"
+    ],
+    "relevance_criteria": "Must retrieve Scikit-learn cross-validation guide explaining validation splits and variance reduction.",
+    "is_answerable": true
+  },
+  {
+    "id": 22,
+    "question": "When should I use StratifiedKFold instead of standard KFold cross-validation in Scikit-learn?",
+    "category": "Model Validation",
+    "library": "Scikit-learn",
+    "target_urls": [
+      "https://scikit-learn.org/stable/modules/cross_validation.html"
+    ],
+    "target_topics": [
+      "Stratified K-Fold",
+      "Cross-validation iterators"
+    ],
+    "relevance_criteria": "Must retrieve documentation showing class proportion preservation in StratifiedKFold for imbalanced targets.",
+    "is_answerable": true
+  },
+  {
+    "id": 23,
+    "question": "How does GridSearchCV exhaustively search hyperparameter spaces using cross-validation?",
+    "category": "Hyperparameter Optimization",
+    "library": "Scikit-learn",
+    "target_urls": [
+      "https://scikit-learn.org/stable/modules/grid_search.html"
+    ],
+    "target_topics": [
+      "Exhaustive Grid Search",
+      "GridSearchCV"
+    ],
+    "relevance_criteria": "Must retrieve documentation detailing param_grid combinations, cv parameter, and best_params_.",
+    "is_answerable": true
+  },
+  {
+    "id": 24,
+    "question": "What is the difference between Precision and Recall, and how is the F1-score computed?",
+    "category": "Evaluation Metrics",
+    "library": "Scikit-learn",
+    "target_urls": [
+      "https://scikit-learn.org/stable/modules/model_evaluation.html"
+    ],
+    "target_topics": [
+      "Precision, recall and F-measures",
+      "Classification metrics"
+    ],
+    "relevance_criteria": "Must retrieve documentation defining True Positives, False Positives, False Negatives, and harmonic mean.",
+    "is_answerable": true
+  },
+  {
+    "id": 25,
+    "question": "How does the ROC curve evaluate binary classifiers and what does the ROC-AUC score measure?",
+    "category": "Evaluation Metrics",
+    "library": "Scikit-learn",
+    "target_urls": [
+      "https://scikit-learn.org/stable/modules/model_evaluation.html"
+    ],
+    "target_topics": [
+      "Receiver operating characteristic (ROC)",
+      "ROC AUC"
+    ],
+    "relevance_criteria": "Must retrieve documentation describing TPR vs FPR thresholds and the area under the curve.",
+    "is_answerable": true
+  },
+  {
+    "id": 26,
+    "question": "What is the difference between StandardScaler and MinMaxScaler when preprocessing features?",
+    "category": "Feature Preprocessing",
+    "library": "Scikit-learn",
+    "target_urls": [
+      "https://scikit-learn.org/stable/modules/preprocessing.html"
+    ],
+    "target_topics": [
+      "Standardization",
+      "Scaling features to a range"
+    ],
+    "relevance_criteria": "Must retrieve documentation comparing zero mean/unit variance scaling against bounded [0, 1] range scaling.",
+    "is_answerable": true
+  },
+  {
+    "id": 27,
+    "question": "What is the bias-variance tradeoff and how can learning curves diagnose underfitting versus overfitting?",
+    "category": "ML Theory & Diagnostics",
+    "library": "Scikit-learn",
+    "target_urls": [
+      "https://scikit-learn.org/stable/modules/learning_curve.html"
+    ],
+    "target_topics": [
+      "Validation curves",
+      "Learning curves",
+      "Underfitting vs overfitting"
+    ],
+    "relevance_criteria": "Must retrieve documentation explaining training score vs validation score divergence and bias/variance.",
+    "is_answerable": true
+  },
+  {
+    "id": 28,
+    "question": "How does the K-Means clustering algorithm work and what is cluster inertia in Scikit-learn?",
+    "category": "Unsupervised Learning",
+    "library": "Scikit-learn",
+    "target_urls": [
+      "https://scikit-learn.org/stable/modules/clustering.html"
+    ],
+    "target_topics": [
+      "K-means",
+      "Clustering"
+    ],
+    "relevance_criteria": "Must retrieve documentation covering Lloyd's algorithm, centroid reassignment, and within-cluster sum-of-squares.",
+    "is_answerable": true
+  },
+  {
+    "id": 29,
+    "question": "How do I create PyTorch tensors and move them between CPU and GPU devices?",
+    "category": "PyTorch Tensors",
+    "library": "PyTorch",
+    "target_urls": [
+      "https://pytorch.org/tutorials/beginner/basics/tensorqs_tutorial.html"
+    ],
+    "target_topics": [
+      "Tensors",
+      "Tensor attributes and devices"
+    ],
+    "relevance_criteria": "Must retrieve PyTorch tensor tutorial showing tensor initialization and .to('cuda') device transfer.",
+    "is_answerable": true
+  },
+  {
+    "id": 30,
+    "question": "How does the PyTorch autograd engine compute gradients using computational graphs and backward()?",
+    "category": "PyTorch Autograd",
+    "library": "PyTorch",
+    "target_urls": [
+      "https://pytorch.org/tutorials/beginner/basics/autogradqs_tutorial.html"
+    ],
+    "target_topics": [
+      "Automatic differentiation with torch.autograd",
+      "Computational graph"
+    ],
+    "relevance_criteria": "Must retrieve Autograd documentation explaining requires_grad, DAGs, and gradient accumulation.",
+    "is_answerable": true
+  },
+  {
+    "id": 31,
+    "question": "How do I define a custom neural network architecture by subclassing nn.Module in PyTorch?",
+    "category": "PyTorch Models",
+    "library": "PyTorch",
+    "target_urls": [
+      "https://pytorch.org/tutorials/beginner/basics/buildmodel_tutorial.html"
+    ],
+    "target_topics": [
+      "Build Neural Network",
+      "nn.Module",
+      "forward method"
+    ],
+    "relevance_criteria": "Must retrieve documentation demonstrating class definition with __init__ and forward pass execution.",
+    "is_answerable": true
+  },
+  {
+    "id": 32,
+    "question": "What is the standard PyTorch training loop sequence involving zero_grad, backward, and optimizer.step?",
+    "category": "PyTorch Training",
+    "library": "PyTorch",
+    "target_urls": [
+      "https://pytorch.org/tutorials/beginner/basics/optimization_tutorial.html"
+    ],
+    "target_topics": [
+      "Optimizing Model Parameters",
+      "Optimization loop"
+    ],
+    "relevance_criteria": "Must retrieve documentation explaining optimizer setup, loss computation, zero_grad, backward, and step.",
+    "is_answerable": true
+  },
+  {
+    "id": 33,
+    "question": "How do PyTorch Dataset and DataLoader handle data batching, shuffling, and multiprocessing?",
+    "category": "PyTorch Data",
+    "library": "PyTorch",
+    "target_urls": [
+      "https://pytorch.org/tutorials/beginner/basics/data_tutorial.html"
+    ],
+    "target_topics": [
+      "Datasets & DataLoaders",
+      "DataLoader"
+    ],
+    "relevance_criteria": "Must retrieve documentation contrasting dataset sample access with DataLoader batch iteration.",
+    "is_answerable": true
+  },
+  {
+    "id": 34,
+    "question": "What are the core concepts of Reinforcement Learning (agent, environment, reward, Q-learning) in PyTorch?",
+    "category": "Reinforcement Learning",
+    "library": "PyTorch",
+    "target_urls": [
+      "https://pytorch.org/tutorials/intermediate/reinforcement_q_learning.html"
+    ],
+    "target_topics": [
+      "Reinforcement Learning (DQN) Tutorial",
+      "Q-value function"
+    ],
+    "relevance_criteria": "Must retrieve PyTorch RL tutorial explaining Bellman equation, policy, and Deep Q-Networks.",
+    "is_answerable": true
+  },
+  {
+    "id": 35,
+    "question": "How do I build and train a neural network using the Keras Sequential model API?",
+    "category": "TensorFlow / Keras",
+    "library": "TensorFlow",
+    "target_urls": [
+      "https://www.tensorflow.org/guide/keras/sequential_model",
+      "https://www.tensorflow.org/tutorials/quickstart/beginner"
+    ],
+    "target_topics": [
+      "The Sequential model",
+      "Quickstart for beginners"
+    ],
+    "relevance_criteria": "Must retrieve documentation showing tf.keras.Sequential layer stacking and compile/fit.",
+    "is_answerable": true
+  },
+  {
+    "id": 36,
+    "question": "What are the roles of Conv2D and MaxPooling2D layers in a Convolutional Neural Network (CNN)?",
+    "category": "TensorFlow / CNNs",
+    "library": "TensorFlow",
+    "target_urls": [
+      "https://www.tensorflow.org/tutorials/images/cnn"
+    ],
+    "target_topics": [
+      "Convolutional Neural Network (CNN)",
+      "Conv2D and MaxPooling2D"
+    ],
+    "relevance_criteria": "Must retrieve TensorFlow CNN tutorial detailing spatial feature extraction and downsampling.",
+    "is_answerable": true
+  },
+  {
+    "id": 37,
+    "question": "When should I use LSTM or GRU layers instead of SimpleRNN when modeling sequential or time-series data?",
+    "category": "TensorFlow / RNNs",
+    "library": "TensorFlow",
+    "target_urls": [
+      "https://www.tensorflow.org/guide/keras/working_with_rnns"
+    ],
+    "target_topics": [
+      "Working with RNNs",
+      "LSTM and GRU"
+    ],
+    "relevance_criteria": "Must retrieve TensorFlow RNN guide explaining gating mechanisms to resolve vanishing gradients.",
+    "is_answerable": true
+  },
+  {
+    "id": 38,
+    "question": "How do model.compile() and model.fit() configure the loss function, optimizer, and training epochs in TensorFlow?",
+    "category": "TensorFlow / Keras",
+    "library": "TensorFlow",
+    "target_urls": [
+      "https://www.tensorflow.org/tutorials/quickstart/beginner",
+      "https://www.tensorflow.org/guide/keras/sequential_model"
+    ],
+    "target_topics": [
+      "Compile and fit",
+      "Training models"
+    ],
+    "relevance_criteria": "Must retrieve documentation demonstrating compile parameters (optimizer, loss, metrics) and fit batching.",
+    "is_answerable": true
+  },
+  {
+    "id": 39,
+    "question": "How do I define path parameters and query parameters in a FastAPI route decorator?",
+    "category": "Out-of-Scope (FastAPI)",
+    "library": "None",
+    "target_urls": [],
+    "target_topics": [],
+    "relevance_criteria": "Must abstain. FastAPI documentation has been removed from the knowledge base.",
+    "is_answerable": false
+  },
+  {
+    "id": 40,
+    "question": "How does the borrow checker in Rust enforce memory safety without a garbage collector?",
+    "category": "Out-of-Scope (Rust)",
+    "library": "None",
+    "target_urls": [],
+    "target_topics": [],
+    "relevance_criteria": "Must abstain. Rust programming language is not indexed.",
+    "is_answerable": false
+  },
+  {
+    "id": 41,
+    "question": "How do I manage state and side effects with useState and useEffect hooks in React?",
+    "category": "Out-of-Scope (React)",
+    "library": "None",
+    "target_urls": [],
+    "target_topics": [],
+    "relevance_criteria": "Must abstain. React front-end framework is not indexed.",
+    "is_answerable": false
+  },
+  {
+    "id": 42,
+    "question": "How do I write a Dockerfile with multi-stage builds to minimize container image size?",
+    "category": "Out-of-Scope (Docker)",
+    "library": "None",
+    "target_urls": [],
+    "target_topics": [],
+    "relevance_criteria": "Must abstain. Docker containerization is not indexed.",
+    "is_answerable": false
+  },
+  {
+    "id": 43,
+    "question": "How do Kubernetes Deployments and ClusterIP Services manage pod scaling and internal routing?",
+    "category": "Out-of-Scope (Kubernetes)",
+    "library": "None",
+    "target_urls": [],
+    "target_topics": [],
+    "relevance_criteria": "Must abstain. Kubernetes orchestration is not indexed.",
+    "is_answerable": false
+  },
+  {
+    "id": 44,
+    "question": "How does the libuv event loop handle non-blocking asynchronous I/O in Node.js?",
+    "category": "Out-of-Scope (Node.js)",
+    "library": "None",
+    "target_urls": [],
+    "target_topics": [],
+    "relevance_criteria": "Must abstain. Node.js runtime is not indexed.",
+    "is_answerable": false
+  },
+  {
+    "id": 45,
+    "question": "How do I configure database connection pool size and pre-ping in SQLAlchemy engine?",
+    "category": "Out-of-Scope (SQLAlchemy)",
+    "library": "None",
+    "target_urls": [],
+    "target_topics": [],
+    "relevance_criteria": "Must abstain. SQLAlchemy is not indexed in this knowledge base.",
+    "is_answerable": false
+  }
+]

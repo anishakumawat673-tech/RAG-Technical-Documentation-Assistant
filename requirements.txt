@@ -1,0 +1,25 @@
+# Phase 1 & 2: Data Collection & Notebook Support
+requests>=2.31.0
+beautifulsoup4>=4.12.0
+pandas>=2.0.0
+ipykernel>=6.29.0
+nbformat>=5.9.0
+nbclient>=0.10.0
+
+# Phase 3: Text Splitting & LangChain Core
+langchain-text-splitters>=0.2.0
+langchain-core>=0.2.0
+
+# Phase 4: Embeddings with HuggingFace Sentence Transformers
+sentence-transformers>=3.0.0
+numpy>=1.26.0
+
+# Phase 5: Vector Index with FAISS
+faiss-cpu>=1.8.0
+
+# Phase 6: LLM Provider (Google Gemini) & Environment Config
+langchain-google-genai>=2.0.0
+python-dotenv>=1.0.0
+
+# Phase 8: Web User Interface
+streamlit>=1.35.0
